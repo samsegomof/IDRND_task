@@ -14,7 +14,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     """Обработчик команды /start"""
-    await message.answer(f'Привет {message.from_user.id}!\nЯ умею сохранять аудиосообщения и фото с лицами')
+    await message.answer('Привет!\nЯ умею сохранять аудиосообщения и фото с лицами')
 
 
 @dp.message_handler(content_types=['voice'])
